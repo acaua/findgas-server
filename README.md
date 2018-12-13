@@ -4,20 +4,27 @@
 
 ## A proposta do teste é:
 ## Criar uma API que através de uma latitude e longitude buscar
-### Dados de endereço
-  - https://maps.googleapis.com/maps/api/geocode/json?latlng=-23.5655625,-46.6472389&sensor=false&key=AIzaSyA6TfU84r6wT2gu1NYAOCN7JkO342K21So
+### Dados de endereço:
+```
+https://maps.googleapis.com/maps/api/geocode/json?latlng=-23.5655625,-46.6472389&sensor=false&key=AIzaSyA6TfU84r6wT2gu1NYAOCN7JkO342K21So
+```
 
 ### Postos de combustíveis abertos ao redor
-  - https://maps.googleapis.com/maps/api/place/search/json?location=-23.5655625,-46.6472389&radius=10000&type=gas_station&key=AIzaSyA6TfU84r6wT2gu1NYAOCN7JkO342K21So
+```
+https://maps.googleapis.com/maps/api/place/search/json?location=-23.5655625,-46.6472389&radius=10000&type=gas_station&key=AIzaSyA6TfU84r6wT2gu1NYAOCN7JkO342K21So
+```
 
-### Request
-  ``{
+### Request:
+```
+  {
       "lat": "-23.5655625",
       "lng": "-46.6472389"
-  }``
+  }
+```
 
-### Response
-  ``{
+### Response:
+```
+  {
     "lat": "-23.5655625",
       "lng": "-46.6472389"
       "endereco": {
@@ -43,10 +50,11 @@
         },
         ...
       ]
-  }``
+  }
+```
 
 
-### Requisitos
+### Requisitos:
 
   - Desenvolver em Javascript, nativo ou utilizando qualquer framework da linguagem
   - Promisse
@@ -56,6 +64,7 @@
   - Object.assign()
 
 ### Entrega:
+
   - Clone este repositório
   - Desenvolva sua aplicação
   - Crie um pull request quando finalizar
