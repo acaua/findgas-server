@@ -27,4 +27,15 @@ const parseAddress = addressData => {
   };
 };
 
-module.exports = { parseAddress };
+const parseGasStations = gasStationData => {
+  return gasStationData.map(gasStation => {
+    return {
+      lat: gasStation.geometry.location.lat,
+      lng: gasStation.geometry.location.lng,
+      nome: gasStation.name,
+      endereco: gasStation.vicinity
+    };
+  });
+};
+
+module.exports = { parseAddress, parseGasStations };
