@@ -13,17 +13,15 @@ router.get("/", (req, res) => {
       error_message: "Invalid request. Missing the 'latlng' parameter."
     });
 
-  axios
-    .get(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latlng}&sensor=false&key=AIzaSyA6TfU84r6wT2gu1NYAOCN7JkO342K21So`
-    )
-    .then(response => {
-      const result = response.data.results[0];
+  const addressRequest = axios.get(
+    `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latlng}&sensor=false&key=AIzaSyA6TfU84r6wT2gu1NYAOCN7JkO342K21So`
+  );
 
-      const data = parseAddress(result);
+  Promise.all([addressRequest]).then(([addressResponse]) => {
+    const data = parseAddress(addressResponse.data.results[0]);
 
-      return res.json(data);
-    });
+    return res.json(data);
+  });
 });
 
 module.exports = router;
