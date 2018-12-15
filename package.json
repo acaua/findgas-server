@@ -1,0 +1,16 @@
+{
+  "name": "findgas",
+  "version": "1.0.0",
+  "description": "REST api to find open gas stations for the given lat long",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/pixtertecnologia/backend.git"
+  },
+  "author": "Acauã Sperl de Faria",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/pixtertecnologia/backend#readme"
+}
