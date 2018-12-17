@@ -1,8 +1,11 @@
 const express = require("express");
+const cors = require("cors");
 
 const gasStations = require("./routes/gasStations");
 
 const app = express();
+
+app.use(cors());
 
 app.use("/api/gasstations", gasStations);
 
