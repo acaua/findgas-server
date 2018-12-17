@@ -28,14 +28,18 @@ const parseAddress = addressData => {
 };
 
 const parseGasStations = gasStationData => {
-  return gasStationData.map(gasStation => {
-    return {
-      lat: gasStation.geometry.location.lat,
-      lng: gasStation.geometry.location.lng,
-      nome: gasStation.name,
-      endereco: gasStation.vicinity
-    };
-  });
+  return gasStationData
+    .filter(gasStation => {
+      return gasStation.opening_hours && gasStation.opening_hours.open_now;
+    })
+    .map(gasStation => {
+      return {
+        lat: gasStation.geometry.location.lat,
+        lng: gasStation.geometry.location.lng,
+        nome: gasStation.name,
+        endereco: gasStation.vicinity
+      };
+    });
 };
 
 module.exports = { parseAddress, parseGasStations };
