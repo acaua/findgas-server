@@ -54,3 +54,41 @@ You can find an example client in React here:
 }
 
 ```
+
+# Downloading and usage instructions
+
+1.  Clone repository
+
+```
+git clone https://github.com/acaua/findgas-server.git
+```
+
+2.  cd into server folder
+
+```
+cd findgas-server
+```
+
+3.  Install dependencias
+
+```
+npm install
+```
+
+4.  Start server in development mode
+
+```
+npm run server
+```
+
+5.  Start server
+
+```
+npm start
+```
+
+6.  Deploy to now <https://zeit.co/now>
+
+```
+now
+```
