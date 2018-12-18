@@ -11,6 +11,12 @@ You can find an example client in React here:
 /api/gasstations?latlng=<lat>,<lng>
 ```
 
+Example using the default server port:
+
+```
+http://localhost:5000/api/gasstations?latlng=-23.5655625,-46.6472385
+```
+
 ## Response
 
 ```
@@ -92,3 +98,5 @@ npm start
 ```
 now
 ```
+
+7. Enjoy! 😎

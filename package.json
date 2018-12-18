@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/pixtertecnologia/backend.git"
+    "url": "git+https://github.com/acaua/findgas-server.git"
   },
   "author": "Acauã Sperl de Faria",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/pixtertecnologia/backend#readme",
+  "homepage": "https://github.com/acaua/findgas-server",
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.5",
